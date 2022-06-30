@@ -1,0 +1,21 @@
+body{
+    background-color: #ededed;
+}
+#card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#generico{
+    border-radius: 5px;
+    background-color: #FFFBFB;
+    box-shadow: 7px 7px 13px 0 #E8E6E6;
+}
+#cardImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#numero{
+    align-items: flex-end;
+}

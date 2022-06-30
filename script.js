@@ -1,38 +1,26 @@
-const app = document.getElementById('cartao');
-const container = document.createElement('div');
-container.setAttribute('class', 'container');
+function apiBase() {
+    let url = 'https://pokeapi.co/api/v2/pokemon/';
+    fetch(url)
+        .then((Response) => {
+            return Response.json();
+        })
+        .then((data) => {
+            console.log(data.results.name);
 
-app.appendChild(container);
 
-const request = new XMLHttpRequest();
+            for (var i = 0; i <= 150; i++) {
 
-request.open('GET', "https://pokeapi.co/api/v2/pokemon/", true);
+                document.getElementById('nome').innerHTML = data.results[i]['name'];
 
-request.onload =  function(){
-    const data = JSON.parse(this.response);
+                document.getElementById('numero').innerHTML = i + 1;
+                
+            }
 
-    console.log(data)
-    console.log(data[0].title)
+        })
 
-    if(request.status >= 200 && request.status < 400){
-        console.log("SUCESSO!!!")
-        data.forEach(pokemon => {
-            const card = document.createElement('div');
-            card.setAttribute('class', 'card');
-          
-            const img = document.createElement('img');
-            img.img = pokemon.sprites.front_default;
-          
-            const p = document.createElement('p');
-            data = pokemon.name;
-            p.textContent = pokemon.name;
-          
-            container.appendChild(card);
-            card.appendChild(h1);
-            card.appendChild(p);
-          });
-    }else{
-        console.log("erro")
+
+        .catch((erro) => {
+            console.log("Erro" + erro)
+        });
     }
-}
-request.send()
+apiBase();
