@@ -60,3 +60,6 @@ span + span{
     font-weight: bold;
     font-size: 20px;
 }
+button :hover{
+    background-color: rgba(4, 17, 17, 0.496);
+}
