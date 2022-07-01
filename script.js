@@ -14,8 +14,7 @@ function apiBase() {
                 fetch(pokemon.url)
                     .then((Response) => {
                         return Response.json();
-                    }
-                    )
+                    })
                     .then((data) => {
                         const img = data.sprites.front_default;
                         const card = document.createElement('div')
@@ -36,9 +35,9 @@ function apiBase() {
 
 
                         var input = document.getElementById('buscaTxt');
-                        var filter = input.ariaValueMax.toUpperCase();
-                        var ul = document.getElementById('list')
-                        var li = ul.setAttribute.nomePokemon;
+                        var filter = input.ariaValueMax.toUpperCase;
+                        var li = list.setAttribute.nomePokemon;
+
 
                         for (i = 0; i < li.length; i++) {
                            var a = li[i].getElementsByTagName("a")[0];
@@ -48,10 +47,8 @@ function apiBase() {
                             } else {
                               li[i].style.display = "none";
                             }
+                            console.log(input.value)
                           }
-                        
-
-                       
                         })
             })
         })
