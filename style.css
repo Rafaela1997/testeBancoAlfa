@@ -1,21 +1,62 @@
 body{
     background-color: #ededed;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+
+
 }
-#card{
+#Busca{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-#generico{
+    
+  }
+  #buscaTxt{
     border-radius: 5px;
-    background-color: #FFFBFB;
-    box-shadow: 7px 7px 13px 0 #E8E6E6;
-}
-#cardImg{
+    width: 100%;
+  }
+  #btnBusca{
+    width: 25px;
+    background-color: aliceblue;
+    border-radius: 5px;
+  }
+  #lupa{
+    width: 15px;
+    justify-content: center;
+  }
+  #list{
+    margin-top: 30px;
+    width: 90%;
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+.card{
+    width: 200px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
+    padding: 20px;
+    border-radius: 8px;
 }
-#numero{
-    align-items: flex-end;
+.contentText{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+span{
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 20px;
+}
+span + span{
+    font-weight: bold;
+    font-size: 20px;
 }
