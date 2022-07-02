@@ -1,44 +1,37 @@
-body {
+body{
     background-color: #ededed;
     width: 100vw;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
 }
-
-#Busca {
+#Busca{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-#buscaTxt {
+    
+  }
+  #buscaTxt{
+    background-color: #ededed;
+    border: none;
     border-radius: 5px;
     width: 100%;
-}
-
-#btnBusca {
-    width: 25px;
-    background-color: aliceblue;
-    border-radius: 5px;
-}
-
-#lupa {
+    height: 30px;
+  }
+  #lupa{
     width: 15px;
     justify-content: center;
-}
-
-#list {
+  }
+  #list{
+    align-items: center;
     margin-top: 30px;
     width: 90%;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-}
-
-.card {
+  }
+.card{
     width: 200px;
     background-color: #ffffff;
     display: flex;
@@ -48,21 +41,20 @@ body {
     padding: 20px;
     border-radius: 8px;
 }
-
-.contentText {
+.contentText{
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-
-span {
+span{
     text-transform: capitalize;
     font-weight: bold;
     font-size: 20px;
 }
-
-span+span {
+span + span{
     font-weight: bold;
     font-size: 20px;
 }
-
+#buscaTxt:hover{
+    background-color: #ffffff;
+}
