@@ -5,6 +5,9 @@ body{
     flex-direction: column;
     justify-content: center;
 }
+p{
+    width: 100%;
+}
 #Busca{
     display: flex;
     align-items: center;
@@ -16,7 +19,8 @@ body{
     border: none;
     border-radius: 5px;
     width: 100%;
-    height: 30px;
+    margin-top: 20px;
+    height: 40px;
   }
   #lupa{
     width: 15px;
@@ -24,7 +28,7 @@ body{
   }
   #list{
     align-items: center;
-    margin-top: 30px;
+    margin-top: 20px;
     width: 90%;
     display: flex;
     flex-wrap: wrap;
